@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page - Wansee</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000957;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #FFEB00;
+        }
+
+ /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #000957;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-size: 1.2rem;
+            color: #344CB7;
+        }
+
+        nav a:hover {
+            color: #FFEB00;
+        }
+
+
+        /* Start Page */
+        #start-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            text-align: center;
+            background-color: #f4f4f4;
+            background-image: url('./images/whitehalls.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #start-page h1 {
+            font-size: 4rem;
+            color: #000957;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.7); /* White Shadow */
+        }
+
+        #start-page p {
+            font-size: 1.5rem;
+            color: #181C14;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 1.0); /* Subtle White Shadow */
+        }
+
+        #start-page button {
+            background-color: #344CB7;
+            color: #ffffff;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #start-page button:hover {
+            background-color: #577BC1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000957;
+            color: #FFEB00;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #FFEB00;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #344CB7;
+        }
+
+    </style>
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Wansee</div>
+        <div>
+            <a href="home.html">Home</a>
+            <a href="signin.html">Sign In</a>
+            <a href="about.html">About</a>
+
+        </div>
+    </nav>
+
+    <!-- Start Page -->
+    <div id="start-page">
+        <h1>The Eye to Incredible Writers</h1>
+        <p>Your gateway to insightful stories and ideas.</p>
+        <button onclick="location.href='home.html'">Get Started</button>
+    </div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Wansee | Follow us on 
+        <a href="https://twitter.com" target="wansee">X (Twitter)</a> | 
+        <a href="https://www.instagram.com" target="wansee">Instagram</a>
+    </p>
+</footer>
+
+</body>
+</html>
