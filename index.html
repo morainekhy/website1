@@ -49,50 +49,60 @@
         nav a:hover {
             color: #FFEB00;
         }
+        
+/* Start Page */
+#start-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    background-color: #f4f4f4;
+    background-image: url('./images/modernlibrary.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+#start-page h1 {
+    font-size: 4rem;
+    color: #000957;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.7); /* White Shadow */
+}
 
-        /* Start Page */
-        #start-page {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-            text-align: center;
-            background-color: #f4f4f4;
-            background-image: url('whitehalls.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+/* Add media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    #start-page h1 {
+        font-size: 2.5rem;
+    }
 
-        #start-page h1 {
-            font-size: 4rem;
-            color: #000957;
-            margin-bottom: 20px;
-            text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.7); /* White Shadow */
-        }
+    #start-page p {
+        font-size: 1.2rem;
+    }
+}
 
-        #start-page p {
-            font-size: 1.5rem;
-            color: #181C14;
-            margin-bottom: 40px;
-            text-shadow: 2px 2px 4px rgba(255, 255, 255, 1.0); /* Subtle White Shadow */
-        }
+#start-page p {
+    font-size: 1.5rem;
+    color: #181C14;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1.0); /* Subtle White Shadow */
+}
 
-        #start-page button {
-            background-color: #344CB7;
-            color: #ffffff;
-            padding: 15px 40px;
-            font-size: 1.5rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+#start-page button {
+    background-color: #344CB7;
+    color: #ffffff;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        #start-page button:hover {
-            background-color: #577BC1;
-        }
+#start-page button:hover {
+    background-color: #577BC1;
+}
 
         /* Footer */
         footer {
