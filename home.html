@@ -70,48 +70,6 @@
             align-items: center;
         }
 
-        nav .search-container {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        nav .search-container form {
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
-        nav .search-container input {
-            padding: 5px 10px;
-            font-size: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            outline: none;
-	    width: 250px;
-        }
-
-        nav .search-container input:focus {
-            border-color: #344CB7;
-            box-shadow: 0 0 5px rgba(52, 76, 183, 0.5);
-        }
-
-        nav .search-container button {
-            padding: 6px 12px;
-            margin-left: 5px;
-            font-size: 1rem;
-            background-color: #344CB7;
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        nav .search-container button:hover {
-            background-color: #FFEB00;
-        }
-
         /* Side Panel */
         .side-panel {
             position: fixed;
@@ -188,48 +146,6 @@
             color: #666;
             line-height: 1.8;
         }
-
-	/* Beginners and Pros Section */
-	.audience-sections {
-    	display: flex;
-    	justify-content: space-around;
-    	margin: 40px 0;
-    	padding: 20px;
-    	background-color: #f4f4f4;
-	}
-
-	.audience {
-    	text-align: center;
-    	padding: 20px;
-    	width: 45%;
-    	background-color: #ffffff;
-    	border-radius: 8px;
-    	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	}
-
-	.audience h2 {
-    	font-size: 2rem;
-    	color: #000957;
-	}
-
-	.audience p {
-    	margin: 15px 0;
-    	color: #666;
-	}
-
-	.audience a {
-    	display: inline-block;
-    	background-color: #344CB7;
-    	color: #ffffff;
-    	padding: 10px 20px;
-    	border-radius: 5px;
-    	text-decoration: none;
-	}
-
-	.audience a:hover {
-    	background-color: #FFEB00;
-    	color: #000957;
-	}
 
 	/* Posts Sections */
 	.posts-grid {
@@ -344,22 +260,6 @@
 	            footer a {
 	                margin: 5px; /* Adjust spacing between links for mobile */
 	            }
-
-			    /* Adjust Beginners and Pros Section for Smaller Devices */
-		@media (max-width: 768px) {
-		    #beginners, #pros {
-		        padding: 20px;
-		        text-align: center; /* Center align the text */
-		    }
-		
-		    #beginners h2, #pros h2 {
-		        font-size: 1.8rem; /* Adjust heading size */
-		    }
-		
-		    #beginners p, #pros p {
-		        font-size: 1rem; /* Adjust paragraph size */
-		        line-height: 1.6;
-		    }
 		}
 	    
     </style>
@@ -372,14 +272,6 @@
             <i class="fas fa-bars"></i> <!-- Hamburger Menu Icon -->
         </div>
         <div class="logo">Wansee</div>
-
-        <!-- Search Bar (Centered) -->
-        <div class="search-container">
-            <form action="search.html" method="GET">
-                <input type="text" name="query" placeholder="Search...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
 
         <!-- Navigation Links -->
         <div class="nav-links">
@@ -407,20 +299,6 @@
             <h2>Build an Elegant Blog</h2>
             <p>Discover how to create a visually stunning and content-rich blog using clean design principles and modern tools...</p>
         </div>
-
-<!-- Beginners and Pros Section -->
-<section class="audience-sections">
-    <div class="audience">
-        <h2>For Beginners</h2>
-        <p>Discover guides, tips, and tools to start your writing journey.</p>
-        <a href="beginners.html">Start Here</a>
-    </div>
-    <div class="audience">
-        <h2>For Professionals</h2>
-        <p>Explore advanced techniques and resources to refine your craft.</p>
-        <a href="pros.html">Learn More</a>
-    </div>
-</section>
 
 <!-- Featured Posts Section -->
 <section class="featured-posts">
