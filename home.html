@@ -336,16 +336,32 @@
 		    .article-card {
 		        padding: 15px;
 		    }
+
+	            footer p {
+	                font-size: 0.9rem; /* Smaller font size for footer text */
+	            }
+	
+	            footer a {
+	                margin: 5px; /* Adjust spacing between links for mobile */
+	            }
+
+			    /* Adjust Beginners and Pros Section for Smaller Devices */
+		@media (max-width: 768px) {
+		    #beginners, #pros {
+		        padding: 20px;
+		        text-align: center; /* Center align the text */
+		    }
+		
+		    #beginners h2, #pros h2 {
+		        font-size: 1.8rem; /* Adjust heading size */
+		    }
+		
+		    #beginners p, #pros p {
+		        font-size: 1rem; /* Adjust paragraph size */
+		        line-height: 1.6;
+		    }
 		}
-
-            footer p {
-                font-size: 0.9rem; /* Smaller font size for footer text */
-            }
-
-            footer a {
-                margin: 5px; /* Adjust spacing between links for mobile */
-            }
-
+	    
     </style>
 </head>
 <body>
